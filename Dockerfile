@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
   python-virtualenv && \
   rm -rf /var/lib/apt/lists/*
 
+RUN sudo apt-get clean
 # Define working directory.
 WORKDIR home/
 
